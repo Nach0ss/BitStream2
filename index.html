@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitStream | Official</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header-logo">
+        <img src="img/біток-removebg-preview.png" alt="Logo">
+        <span>BitStream</span>
+    </div>
+
+    <h1>BITSTREAM</h1>
+    <p>Зручний моніторинг криптовалют у реальному часі.</p>
+
+<div class="stats-panel">
+    <div class="stat-card">
+        <div class="stat-header">Market Cap <span class="arrow">›</span></div>
+        <div class="stat-value">$2.65T <span class="stat-up">▲ 1.87%</span></div>
+        <div class="chart-container">
+            <canvas id="marketChart"></canvas>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-header">CMC20 <span class="arrow">›</span></div>
+        <div class="stat-value">$161.62 <span class="stat-up">▲ 2.1%</span></div>
+        <div class="chart-container">
+            <canvas id="cmcChart"></canvas>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-header">Fear & Greed <span class="arrow">›</span></div>
+        <div class="fear-greed-container">
+            <div class="gauge"></div>
+            <div class="fear-value">47</div>
+            <div class="fear-label">Neutral</div>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-header">Altcoin Season <span class="arrow">›</span></div>
+        <div class="alt-season-value">43 <span>/ 100</span></div>
+        <div class="alt-season-bar">
+            <div class="bar-progress"></div>
+            <div class="bar-dot"></div>
+        </div>
+        <div class="bar-labels"><span>Bitcoin</span><span>Altcoin</span></div>
+    </div>
+</div>
+
+<div class="main-layout">
+    <div class="crypto-container">
+        <div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png" alt="BTC" class="coin-icon">
+            <div class="coin-name"><strong>Bitcoin</strong> <span class="ticker">BTC</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/BTC_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="btc-price" class="price-val">Завантаження...</span>
+            <span id="btc-change" class="percent-val">0.00%</span>
+        </div>
+
+        <div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/279/small/ethereum.png" alt="ETH" class="coin-icon">
+            <div class="coin-name"><strong>Ethereum</strong> <span class="ticker">ETH</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/ETH_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="eth-price" class="price-val">Завантаження...</span>
+            <span id="eth-change" class="percent-val">0.00%</span>
+        </div>
+
+        <div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/4128/small/solana.png" alt="SOL" class="coin-icon">
+            <div class="coin-name"><strong>Solana</strong> <span class="ticker">SOL</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/SOL_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="sol-price" class="price-val">Завантаження...</span>
+            <span id="sol-change" class="percent-val">0.00%</span>
+        </div>
+
+        <div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/17980/small/ton_symbol.png" alt="TON" class="coin-icon">
+            <div class="coin-name"><strong>Toncoin</strong> <span class="ticker">TON</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/TON_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="ton-price" class="price-val">Завантаження...</span>
+            <span id="ton-change" class="percent-val">0.00%</span>
+        </div>
+
+<div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/1094/small/tron.png" alt="TRX" class="coin-icon">
+            <div class="coin-name"><strong>TRON</strong> <span class="ticker">TRX</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/TRX_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="trx-price" class="price-val">Завантаження...</span>
+            <span id="trx-change" class="percent-val">0.00%</span>
+        </div>
+
+        <div class="coin-row">
+            <span class="star">★</span>
+            <img src="https://assets.coingecko.com/coins/images/34305/small/notcoin.png" alt="NOT" class="coin-icon">
+            <div class="coin-name"><strong>Notcoin</strong> <span class="ticker">NOT</span></div>
+            <a href="https://www.binance.com/uk-UA/trade/NOT_USDT" target="_blank">
+                <button class="buy-btn">Покупка</button>
+            </a>
+            <span id="not-price" class="price-val">Завантаження...</span>
+            <span id="not-change" class="percent-val">0.00%</span>
+        </div>
+    </div>
+
+    <div class="chart-section">
+        <div id="tradingview_chart"></div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget({
+            "width": "100%",
+            "height": 480, // Трохи збільшив висоту під довжину списку з TRON
+            "symbol": "BINANCE:BTCUSDT",
+            "interval": "60",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "uk",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_chart"
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
