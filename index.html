@@ -99,7 +99,7 @@
             <span id="ton-change" class="percent-val">0.00%</span>
         </div>
 
-<div class="coin-row">
+        <div class="coin-row">
             <span class="star">★</span>
             <img src="https://assets.coingecko.com/coins/images/1094/small/tron.png" alt="TRX" class="coin-icon">
             <div class="coin-name"><strong>TRON</strong> <span class="ticker">TRX</span></div>
@@ -127,12 +127,104 @@
     </div>
 </div>
 
+<!-- ===== ІНФО-БЛОК З ВКЛАДКАМИ ===== -->
+<div class="info-section">
+    <div class="tabs-header">
+        <button class="tab-btn active" onclick="switchTab('facts', this)">💡 Цікаві факти</button>
+        <button class="tab-btn" onclick="switchTab('traps', this)">⚠️ Як не попастись</button>
+        <button class="tab-btn" onclick="switchTab('tips', this)">✅ Поради</button>
+        <button class="tab-btn" onclick="switchTab('glossary', this)">📖 Словник</button>
+    </div>
+
+    <div class="panel-box">
+
+        <div id="tab-facts" class="tab-panel active">
+            <div class="info-cards-row">
+                <div class="info-card">
+                    <div class="info-card-num">01</div>
+                    <div class="info-card-title">Анонімний творець</div>
+                    <div class="info-card-text">Сатоші Накамото — творець Bitcoin — досі невідомий. На його гаманці лежить близько <strong>1 млн BTC</strong>, яких він ніколи не торкнувся.</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-num">02</div>
+                    <div class="info-card-title">Піца за мільярди</div>
+                    <div class="info-card-text">У 2010 р. програміст купив дві піци за <strong>10 000 BTC</strong>. Щороку 22 травня криптоспільнота відзначає "Bitcoin Pizza Day".</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-num">03</div>
+                    <div class="info-card-title">Геній у 19 років</div>
+                    <div class="info-card-text">Ethereum придумав Віталік Бутерін у <strong>19 років</strong>. Whitepaper він надіслав друзям у 2013-му, а вже через рік запустив проєкт.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-traps" class="tab-panel">
+            <div class="info-cards-row">
+                <div class="info-card danger">
+                    <div class="info-card-badge">СКАМ</div>
+                    <div class="info-card-title">Pump &amp; Dump</div>
+                    <div class="info-card-text">Штучно "накачують" ціну невідомої монети у Telegram, потім скидають. Решта інвесторів залишаються ні з чим.</div>
+                </div>
+                <div class="info-card danger">
+                    <div class="info-card-badge">СКАМ</div>
+                    <div class="info-card-title">Фейкові біржі</div>
+                    <div class="info-card-text">Сайти-підробки під Binance або MetaMask крадуть паролі і seed-фрази. Завжди перевіряй URL і користуйся лише офіційними посиланнями.</div>
+                </div>
+                <div class="info-card danger">
+                    <div class="info-card-badge">СКАМ</div>
+                    <div class="info-card-title">Rug Pull</div>
+                    <div class="info-card-text">Творці нового токена збирають гроші, потім зникають, видаляючи ліквідність. Дуже поширено серед мем-коїнів на Solana.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-tips" class="tab-panel">
+            <div class="info-cards-row">
+                <div class="info-card tip">
+                    <div class="info-card-badge tip">ПОРАДА</div>
+                    <div class="info-card-title">Зберігай seed офлайн</div>
+                    <div class="info-card-text">Запиши seed-фразу на папір, ніколи не фотографуй і не зберігай у хмарі. Хто знає фразу — той справжній власник гаманця.</div>
+                </div>
+                <div class="info-card tip">
+                    <div class="info-card-badge tip">ПОРАДА</div>
+                    <div class="info-card-title">DYOR</div>
+                    <div class="info-card-text">Перед інвестицією вивчи проєкт самостійно: хто команда, який whitepaper, яка реальна технологія стоїть за монетою.</div>
+                </div>
+                <div class="info-card tip">
+                    <div class="info-card-badge tip">ПОРАДА</div>
+                    <div class="info-card-title">Не ризикуй більше ніж можеш</div>
+                    <div class="info-card-text">Крипторинок дуже волатильний. Bitcoin падав на <strong>80%</strong> від піку. Ніколи не вкладай останні або позикові гроші.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-glossary" class="tab-panel">
+            <div class="info-cards-row">
+                <div class="info-card">
+                    <div class="info-card-title">HODL</div>
+                    <div class="info-card-text">Тримати монету довгостроково, не продаючи навіть під час падіння ринку. Походить від помилки у написанні "hold".</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-title">Whale 🐋</div>
+                    <div class="info-card-text">"Кит" — інвестор з дуже великим капіталом, який може рухати весь ринок своїми угодами купівлі або продажу.</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-title">Bull / Bear market</div>
+                    <div class="info-card-text"><strong>Bull</strong> — бичачий ринок, ціни ростуть. <strong>Bear</strong> — ведмежий, ціни падають. Основні фази крипторинку.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ===== КІНЕЦЬ ІНФО-БЛОКУ ===== -->
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget({
             "width": "100%",
-            "height": 480, // Трохи збільшив висоту під довжину списку з TRON
+            "height": 480,
             "symbol": "BINANCE:BTCUSDT",
             "interval": "60",
             "timezone": "Etc/UTC",
@@ -147,5 +239,13 @@
         });
     </script>
     <script src="script.js"></script>
+    <script>
+        function switchTab(id, btn) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('tab-' + id).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
 </body>
 </html>
